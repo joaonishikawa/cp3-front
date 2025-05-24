@@ -38,8 +38,8 @@ Aluno de Engenharia de Software – FIAP
 
 ## 🔗 Acesso ao Projeto
 
-- Repositório GitHub: [link_do_seu_repositório_aqui](#)
-- GitHub Pages: [link_do_site_publicado_aqui](#)
+- [Repositório GitHub](https://github.com/joaonishikawa/cp3-front)
+- [GitHub Pages](link_do_site_publicado_aqui)
 
 > Substitua os links acima pelos seus reais quando publicar o projeto.
 
