@@ -1,0 +1,155 @@
+:root {
+    --color-bg: #f8f5f0;              /* Bege claro - fundo da página */
+    --color-surface: #fffdf9;         /* Branco quente - blocos/cards */
+    --color-primary: #7b1e3c;         /* Bordô - títulos e detalhes */
+    --color-primary-dark: #4b0f1c;    /* Vinho escuro - cabeçalhos/rodapé */
+    --color-secondary: #c9a66b;       /* Dourado suave - destaque */
+    --color-text: #2c1a17;            /* Marrom escuro - texto padrão */
+}
+ww
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Merriweather', serif;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--color-primary-dark);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 1px 1px 6px var(--color-secondary);
+}
+
+/* Área de destaque */
+#destaque {
+    background-color: var(--color-surface);
+    padding: 50px 20px;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+#destaque h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#destaque p {
+    font-size: 18px;
+}
+
+/* Cards */
+#catalogo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border-color: var(--color-secondary);
+}
+
+/* Lista de produtos */
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.produto {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-primary-dark);
+    border-radius: 8px;
+    padding: 18px;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: subir 1s forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--color-text);
+}
+
+.produto:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-secondary);
+}
+
+@keyframes subir {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--color-primary-dark);
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 15px;
+    font-style: italic;
+    border-top: 2px solid var(--color-secondary);
+}
